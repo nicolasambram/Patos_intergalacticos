@@ -74,6 +74,13 @@ scene.onOverlapTile(SpriteKind.d, assets.tile`myTile1`, function (sprite, locati
     player3.setPosition(8, 54)
     player4.setPosition(40, 54)
 })
+scene.onOverlapTile(SpriteKind.a, assets.tile`myTile4`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`nivel6`)
+    player1.setPosition(8, 10)
+    player2.setPosition(40, 10)
+    player3.setPosition(8, 54)
+    player4.setPosition(40, 54)
+})
 controller.player3.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.Pressed, function () {
     player3.setImage(img`
         . . . . . . . . . . b 7 b . . . 
@@ -184,8 +191,22 @@ controller.player1.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Pr
         . . . b b c c c c c c c c . . . 
         `)
 })
+scene.onOverlapTile(SpriteKind.c, assets.tile`myTile4`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`nivel6`)
+    player1.setPosition(8, 10)
+    player2.setPosition(40, 10)
+    player3.setPosition(8, 54)
+    player4.setPosition(40, 54)
+})
 scene.onOverlapTile(SpriteKind.c, assets.tile`myTile0`, function (sprite, location) {
     player3.setPosition(8, 54)
+})
+scene.onOverlapTile(SpriteKind.b, assets.tile`myTile4`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`nivel6`)
+    player1.setPosition(8, 10)
+    player2.setPosition(40, 10)
+    player3.setPosition(8, 54)
+    player4.setPosition(40, 54)
 })
 scene.onOverlapTile(SpriteKind.b, assets.tile`myTile1`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`nivel2`)
@@ -216,6 +237,13 @@ controller.player4.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.P
         . . c b 6 6 6 6 6 9 9 9 b b . . 
         . . . c c c c c c c c b b . . . 
         `)
+})
+scene.onOverlapTile(SpriteKind.d, assets.tile`myTile4`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`nivel6`)
+    player1.setPosition(8, 10)
+    player2.setPosition(40, 10)
+    player3.setPosition(8, 54)
+    player4.setPosition(40, 54)
 })
 scene.onOverlapTile(SpriteKind.b, assets.tile`myTile0`, function (sprite, location) {
     player2.setPosition(40, 10)
